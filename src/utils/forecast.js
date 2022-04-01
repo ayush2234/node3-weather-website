@@ -11,7 +11,7 @@ const forecast= (address,callback) => {
                  } else{ 
                      
                     callback(undefined,{ 
-                        forecast:'It is currently ' + body.list[0].main.temp_max + ' degress out. This tempreature is'+ body.list[0].main.temp+ ' with a humidity '+ body.list[0].main.humidity+ '.There is a '+  body.list[0].main.pressure+ ' % chance of rain',
+                        forecast:'It is currently ' + body.list[0].main.temp_max + ' degress out. This tempreature is '+ body.list[0].main.temp+ ' with a humidity '+ body.list[0].main.humidity+ '.There is a '+  body.list[0].main.pressure+ ' % chance of rain',
                         latitude: body.list[0].main.temp_max  ,
                         longitude: body.list[0].main.temp_max,
                         description: body.list[0].weather[0].description
